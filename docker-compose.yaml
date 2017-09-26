@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+  app.web:
+    image: app.web
+    env_file: 
+      - ./path.to.project/config.env
+    build:
+      context: ./path.to.project
+      dockerfile: Dockerfile
+
